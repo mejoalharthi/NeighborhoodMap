@@ -7,7 +7,7 @@
 
 # Project Overview
 
-For the ** Neighborhood Map ** project, is a single-page application using React featuring a map of Coffee & roastery shops in jeddah
+For the **Neighborhood Map** project, is a single-page application using React featuring a map of Coffee & roastery shops in jeddah
 
 ## Technologies & Packages
 
