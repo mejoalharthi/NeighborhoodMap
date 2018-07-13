@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.visible{
+visibility :visible;
+
+}
+.hidden{
+visibility :hidden;
+
+}
+.input {
+ width:91%;
+ position: relative;
+ padding: 10px 10px;
+ top: 15px;
+ font-size: 15px;
+ border: none;
+ outline: none;
+ border: 1px solid #DFD4FC;
+
+}
+.info{
+  border-radius: 6px;
+   padding: 3px 0;
+   background-color: #001a33;
+   color: #E6E6E6;
+
+}
+.listItems{
+  list-style-type: circle;
+   display: block;
+   flex-wrap: wrap;
+   padding-right: 10px;
+   padding-left: 10px;
+   text-align: left;
+}
+
+
+li{
+   padding-top: 15px;
+}
+
+.map-container {
+  height: 98%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
+#map {
+  height: 98%;
+  right: 0;
+}
+
+.list {
+  height: 100%;
+  background-color: white;
+  width: 25%;
+  position: absolute;
+  left: 0;
+  padding: 0 15px;
+  border-radius:0 10px 10px 0;
+}
+
+.nav{
+background-color: black;
+color: #E6E6E6;
+padding: 10px;
+text-transform: uppercase;
+text-align: center;
+}
+
+/* ====================== @media   ====================== */
+
+@media only screen and (min-width: 359px) and (max-width: 450px) {
+  li{
+  font-size: 10px;
+  }
+
+  .input {
+   width:60%;
+   font-size: 10px;
+
+  }
+
+  .list {
+
+    width: 30%;
+    position: absolute;
+    left: 0;
+    padding: 0 10px;
+    border-radius:0 5px 5px 0;
+  }
+  .nav{
+  font-size: 10px;
+  padding: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+
+}
