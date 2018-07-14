@@ -50,7 +50,9 @@ if (isScriptLoaded && !this.props.isScriptLoaded) { // load finished
             locations[i].data = data.response.venues[0];
 
       });
-    });
+    }).catch(error =>
+      console.error(error)
+      )
   }
 }
 
@@ -111,7 +113,7 @@ populateInfoWindow = (marker, largeInfowindow,foursquareData) => {
  // Check to make sure the infowindow is not already opened on this marker.
  if (largeInfowindow.marker !== marker) {
    largeInfowindow.marker = marker;
-   largeInfowindow.setContent('<div className="info">' + foursquareData + '</div>');
+   largeInfowindow.setContent('<div className="info" tabIndex="0">' + foursquareData + '</div>');
    largeInfowindow.open(this.state.map, marker);
       if(marker){
         if (marker.getAnimation() !== null) {

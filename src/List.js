@@ -59,7 +59,7 @@ class List extends Component {
 
        <div id="list" className="hidden">
        <input type="text" placeholder="search" tabIndex="0" id="input" role="Search"
-       aria-labelledby="Type for Search Locations"
+        aria-label="Type for Search Locations"
         autoComplete="off"
         className="hidden"
         value={this.props.query}
